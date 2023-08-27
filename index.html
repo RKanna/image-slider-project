@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#e1533c",
+              skyblue: "#5bcbff",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      type="
+    text/css"
+      href="./styles/normalize.css"
+    />
+    <script src="https://use.fontawesome.com/c56d76baa9.js"></script>
+    <link
+      href="https://use.fontawesome.com/c56d76baa9.css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Image-Slider-Project</title>
+    <link rel="shortcut icon" href="icons/calculator.png" type="image/x-icon" />
+  </head>
+  <body class="flex justify-center items-center">
+    <div
+      class="image-slider-div border-2 border-skyblue flex-wrap overflow-visible relative rounded-2xl"
+    >
+      <i
+        class="itag absolute bg-skyblue w-[2.1rem] h-[2.1rem] text-white fa fa-caret-square-o-left fa-2x button"
+        aria-hidden="true"
+        id="backward"
+      ></i>
+      <i
+        class="itag-another absolute bg-skyblue w-[2.1rem] h-[2.1rem] text-white fa fa-caret-square-o-right fa-2x button"
+        aria-hidden="true"
+        id="forward"
+      ></i>
+      <div
+        class="img-container overflow-hidden w-[78rem] h-[37rem] rounded-2xl"
+      >
+        <img class="imgOne scaled-image" src="/images/image-0.jpg" alt="cat" />
+        <img class="imgTwo scaled-image" src="/images/image-1.jpg" alt="cat" />
+        <img class="imgThree scaled-image" src="/images/image-2.jpg" alt="" />
+        <img class="imgFour scaled-image" src="/images/image-3.jpg" alt="" />
+        <img class="imgFive scaled-image" src="/images/image-4.jpg" alt="" />
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
